@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLTAPUERTO® — Disponibilidad Crítica para Flotas Eléctricas | V Región</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="film-grain"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <div class="ambient-canvas">
+        <div class="orb orb-1" id="orb-1"></div>
+        <div class="orb orb-2" id="orb-2"></div>
+        <div class="orb orb-3" id="orb-3"></div>
+        <div class="backdrop-blur"></div>
+    </div>
+
+    <header class="navbar">
+        <a href="#" class="brand" data-magnetic>
+            <div class="brand-badge">VP</div>
+            <div class="brand-text-wrap">
+                <span class="brand-main">VOLTAPUERTO®</span>
+                <span class="brand-sub">ELECTROMOVILIDAD · V REGIÓN</span>
+            </div>
+        </a>
+
+        <div class="nav-telemetry">
+            <span class="status-dot"></span>
+            <span>SLA RESPUESTA &lt; 2H</span>
+            <span>|</span>
+            <span id="local-time">VALPARAÍSO, CL</span>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="#contexto" class="nav-item" data-magnetic>EL PROBLEMA</a>
+            <a href="#segmentos" class="nav-item" data-magnetic>SECTORES</a>
+            <a href="#solucion" class="nav-item" data-magnetic>SLA 24/7</a>
+            <a href="#roadmap" class="nav-item" data-magnetic>HOJA DE RUTA</a>
+            <a href="#contacto" class="btn-emergency" data-magnetic>⚡ EMERGENCIA 24/7</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-layout">
+                <div class="hero-top-meta reveal-up">
+                    <div class="corfo-tag">
+                        <span class="year-code">V REGIÓN · 2K26</span>
+                        <span class="norm-badge">✓ AUTORIZADOS SEC · NORMA RIC N°15</span>
+                    </div>
+                    <ul class="services-mini-list">
+                        <li><strong>Mantenimiento Preventivo &amp; Termografía</strong></li>
+                        <li><strong>Respuesta de Emergencia 24/7 (&lt; 2h)</strong></li>
+                        <li><strong>Instalación Llave en Mano + Declaración TE6</strong></li>
+                    </ul>
+                </div>
+
+                <div class="hero-stage">
+                    <div class="hero-visual-wrapper">
+                        <div class="hero-image-card" id="hero-tilt">
+                            <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=2000&auto=format&fit=crop" alt="Mantenimiento de Cargadores de Alta Potencia VoltaPuerto" class="hero-img">
+                            <div class="image-vignette"></div>
+                            <div class="card-hud-overlay">
+                                <span class="hud-pill">DISPONIBILIDAD &gt; 98%</span>
+                                <span class="hud-pill">SII 331400 · 432100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-typography">
+                        <h1 class="massive-title">
+                            <span class="line line-1">Volta</span>
+                            <span class="line line-2">
+                                <em>Puerto</em> <span class="thin-tag">SLA &lt; 2H</span>
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="hero-bottom-bar reveal-up">
+                    <p class="hero-manifesto">
+                        <strong>No vendemos horas-hombre: vendemos disponibilidad.</strong> Mantenemos operativa la infraestructura de carga para flotas eléctricas de transporte público, minería y logística en la Región de Valparaíso.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#contacto" class="btn-primary-cta" data-magnetic>
+                            <span>DIAGNÓSTICO GRATUITO DE 1 CARGADOR</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 01: EL PROBLEMA -->
+        <section id="contexto" class="section-block">
+            <div class="section-header reveal-up">
+                <div>
+                    <span class="section-index">01 // CONTEXTO CRÍTICO EN REGIONES</span>
+                    <h2 class="section-title">La flota crece más rápido <br><em>que su red de carga.</em></h2>
+                </div>
+                <p class="section-desc">
+                    Cada cargador que falla deja detenidos más vehículos comerciales, y fuera de Santiago existen menos cargadores de reemplazo y soporte local.
+                </p>
+            </div>
+
+            <div class="metrics-bento">
+                <article class="metric-card reveal-up">
+                    <div class="metric-source">
+                        <span>FUENTE: ANAC (ENE–AGO 2026)</span>
+                        <span>DEMANDA</span>
+                    </div>
+                    <div class="metric-value val-positive">+143,4%</div>
+                    <h3 class="metric-label">Ventas de vehículos enchufables</h3>
+                    <p class="metric-detail">12.702 unidades vendidas en Chile entre enero y agosto de 2026 frente al mismo período de 2025.</p>
+                </article>
+
+                <article class="metric-card reveal-up">
+                    <div class="metric-source">
+                        <span>FUENTE: SEC (1° SEMESTRE 2026)</span>
+                        <span>INFRAESTRUCTURA</span>
+                    </div>
+                    <div class="metric-value val-negative">−54,7%</div>
+                    <h3 class="metric-label">Nuevos puntos de carga públicos</h3>
+                    <p class="metric-detail">Caída en nuevos puntos públicos durante el primer semestre de 2026, aumentando la exigencia sobre los equipos instalados.</p>
+                </article>
+
+                <article class="metric-card reveal-up">
+                    <div class="metric-source">
+                        <span>FUENTE: SEC (5.245 CARGADORES)</span>
+                        <span>CENTRALIZACIÓN</span>
+                    </div>
+                    <div class="metric-value val-warning">73,0%</div>
+                    <h3 class="metric-label">Concentrados en la RM (3.827)</h3>
+                    <p class="metric-detail">76,5% de los cargadores del país son privados (4.015). En regiones, depender de técnicos de Santiago multiplica las horas de parada.</p>
+                </article>
+            </div>
+
+            <div class="sla-simulator reveal-up">
+                <div class="sim-controls">
+                    <span class="section-index">SIMULADOR DE IMPACTO OPERATIVO V REGIÓN</span>
+                    <label for="charger-slider">
+                        <span>TAMAÑO DE TU INFRAESTRUCTURA:</span>
+                        <strong id="charger-count-val">12 CARGADORES</strong>
+                    </label>
+                    <input type="range" id="charger-slider" class="sim-slider" min="2" max="60" value="12">
+                    <p style="font-size: 0.82rem; color: var(--text-secondary);">
+                        Compara el tiempo de respuesta en terreno con nuestra base local en Valparaíso frente a soporte externo desde la RM.
+                    </p>
+                </div>
+                <div class="sim-results">
+                    <div class="sim-stat">
+                        <span>RESPUESTA VOLTAPUERTO</span>
+                        <strong style="color: var(--accent-highlight);">&lt; 2 Horas</strong>
+                        <span>Disponibilidad &gt; 98%</span>
+                    </div>
+                    <div class="sim-stat">
+                        <span>RIESGO SIN BASE LOCAL</span>
+                        <strong style="color: #f87171;" id="risk-vehicles">~36 Vehículos</strong>
+                        <span>expuestos por falla nocturna</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 02: SEGMENTOS -->
+        <section id="segmentos" class="section-block">
+            <div class="section-header reveal-up">
+                <div>
+                    <span class="section-index">02 // SEGMENTOS DE OPERACIÓN CRÍTICA</span>
+                    <h2 class="section-title">A quién <em>protegemos</em></h2>
+                </div>
+                <p class="section-desc">Atención dedicada con protocolos específicos para transporte público urbano, minería de alta montaña y flotas logísticas privadas.</p>
+            </div>
+
+            <div class="cinematic-gallery">
+                <article class="project-card card-large reveal-up">
+                    <div class="project-media">
+                        <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=1800&auto=format&fit=crop" alt="Electroterminales Transporte Público Gran Valparaíso">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>01 / CLIENTE ANCLA · TRANSPORTE PÚBLICO GRAN VALPARAÍSO</span>
+                            <span class="kpi-badge">~240 BUSES ELÉCTRICOS · 3 ELECTROTERMINALES</span>
+                        </div>
+                        <h3 class="project-name">Consorcio Valparaíso, Viña Bus <em>&amp; Trolebús</em></h3>
+                        <p class="project-excerpt">Un cargador caído deja buses sin carga e interrumpe un servicio público esencial. Asignamos supervisor dedicado a cada electroterminal, mesa de ayuda 24/7 y reporte mensual de SLA.</p>
+                        <div class="segment-meta-grid">
+                            <span><strong>META 2029:</strong> 2 de 3 electroterminales bajo contrato</span>
+                            <span><strong>PROYECCIÓN:</strong> ~2.000 buses a renovar en 3 licitaciones</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card card-vertical reveal-up">
+                    <div class="project-media">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop" alt="Minería Codelco Andina y El Teniente">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>02 / ALTO VALOR · MINERÍA</span>
+                            <span class="kpi-badge">8 PUNTOS EN ANDINA HOY</span>
+                        </div>
+                        <h3 class="project-name">Codelco Andina <em>&amp; El Teniente</em></h3>
+                        <p class="project-excerpt">El traslado de trabajadores no puede detenerse y los cargadores están en faena lejos de la ciudad. Técnicos acreditados en faena y co-creación de protocolos de seguridad.</p>
+                        <div class="segment-meta-grid">
+                            <span><strong>MODALIDAD:</strong> Monitoreo remoto + Asistencia en alta montaña</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card card-vertical reveal-up">
+                    <div class="project-media">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop" alt="Logística y Flotas Corporativas">
+                        <div class="media-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>03 / VOLUMEN PRIVADO · LOGÍSTICA</span>
+                            <span class="kpi-badge">76,5% RED PRIVADA</span>
+                        </div>
+                        <h3 class="project-name">Chilexpress &amp; <em>Centros Logísticos</em></h3>
+                        <p class="project-excerpt">Las flotas cargan de noche: una falla nocturna son pedidos sin entregar. Ofrecemos planes estándar por cargador, portal con historial y soporte 24/7 vía teléfono y WhatsApp.</p>
+                        <div class="segment-meta-grid">
+                            <span><strong>ENTRADA:</strong> Diagnóstico gratuito de 1 cargador en terreno</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 03: CONSOLA INTERACTIVA -->
+        <section id="solucion" class="section-block">
+            <div class="atmosphere-container reveal-up">
+                <div class="atmo-sidebar">
+                    <span class="section-index">03 // PROPUESTA DE VALOR</span>
+                    <h3 class="atmo-title">Ingeniería de <em>Disponibilidad</em></h3>
+                    <p class="atmo-text">Mantenimiento preventivo y correctivo con SLA, más venta e instalación llave en mano siempre acompañada de contrato de mantenimiento.</p>
+
+                    <div class="preset-controls">
+                        <span class="control-label">PILARES DE CONTINUIDAD:</span>
+                        <div class="preset-buttons">
+                            <button class="preset-btn active" data-theme="emerald" data-magnetic>
+                                <span class="preset-btn-left"><span class="dot dot-emerald"></span> Base Local 24/7 V Región</span>
+                                <span class="preset-sla-tag">SLA &lt; 2H</span>
+                            </button>
+                            <button class="preset-btn" data-theme="cyber" data-magnetic>
+                                <span class="preset-btn-left"><span class="dot dot-cyber"></span> Prevención &amp; Termografía</span>
+                                <span class="preset-sla-tag">&gt; 98% UPTIME</span>
+                            </button>
+                            <button class="preset-btn" data-theme="amber" data-magnetic>
+                                <span class="preset-btn-left"><span class="dot dot-amber"></span> Calidad Certificada SEC</span>
+                                <span class="preset-sla-tag">RIC N°15 / TE6</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atmo-visualizer">
+                    <div class="visualizer-mesh" id="dynamic-mesh"></div>
+                    <div class="viz-top-bar">
+                        <span class="viz-tag" id="viz-code">PROTOCOLO // RESPUESTA RÁPIDA V REGIÓN</span>
+                        <span>DISPONIBILIDAD GARANTIZADA</span>
+                    </div>
+                    <div class="visualizer-content">
+                        <h4 class="viz-heading" id="viz-title">Técnicos en terreno en menos de 2 horas</h4>
+                        <p class="viz-sub" id="viz-desc">Camionetas de asistencia en terreno, taller en la V Región e inventario local de repuestos críticos para que ningún cargador espere días por atención.</p>
+                    </div>
+                    <div class="viz-bottom-metrics">
+                        <span>⚡ EMERGENCIAS: <strong>MESA DE AYUDA 24/7</strong></span>
+                        <span>🔧 INSTRUMENTAL: <strong>TERMOGRAFÍA &amp; ANALIZADORES DE REDES</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 04: ROADMAP -->
+        <section id="roadmap" class="section-block">
+            <div class="section-header reveal-up">
+                <div>
+                    <span class="section-index">04 // OBJETIVOS ESTRATÉGICOS 2027–2031</span>
+                    <h2 class="section-title">Escalamiento <em>Regional</em></h2>
+                </div>
+                <p class="section-desc">Respaldados por capital semilla ($500M: 60% CORFO / 40% Socios) para consolidar la infraestructura crítica de electromovilidad en regiones.</p>
+            </div>
+
+            <div class="roadmap-grid">
+                <div class="roadmap-card reveal-up">
+                    <span class="rm-year">DESDE AÑO 1 (2027)</span>
+                    <h3 class="rm-goal">&lt; 2h &amp; &gt; 98%</h3>
+                    <p class="rm-desc">Respuesta en menos de 2 horas, disponibilidad sobre 98% y equipo 100% autorizado SEC en RIC N°15.</p>
+                </div>
+                <div class="roadmap-card reveal-up">
+                    <span class="rm-year">AÑO 3 (2029) · CLIENTES</span>
+                    <h3 class="rm-goal">2 de 3 Terminales</h3>
+                    <p class="rm-desc">Operar el mantenimiento de al menos 2 de los 3 electroterminales del Gran Valparaíso.</p>
+                </div>
+                <div class="roadmap-card reveal-up">
+                    <span class="rm-year">AÑO 3 (2029) · FINANZAS</span>
+                    <h3 class="rm-goal">≥ 60% Recurrente</h3>
+                    <p class="rm-desc">60% o más de los ingresos por contratos mensuales de mantenimiento y utilidad operacional positiva.</p>
+                </div>
+                <div class="roadmap-card reveal-up">
+                    <span class="rm-year">AÑO 5 (2031) · EXPANSIÓN</span>
+                    <h3 class="rm-goal">Base O’Higgins</h3>
+                    <p class="rm-desc">Segunda base operativa en la Región de O’Higgins dedicada a la gran minería (El Teniente).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="contacto" class="footer">
+            <div class="footer-grid reveal-up">
+                <div>
+                    <span class="section-index">05 // INICIA CON VOLTAPUERTO</span>
+                    <h2 class="footer-cta">Que ningún vehículo se detenga <em>por falta de carga.</em></h2>
+                    <p class="section-desc">Base operativa en la Región de Valparaíso. Atención directa para licitaciones de transporte público, faenas mineras y flotas logísticas privadas.</p>
+                </div>
+
+                <div class="diagnostic-card">
+                    <h3>Solicitar Diagnóstico Gratuito de 1 Cargador</h3>
+                    <p>Inspección termográfica preventiva y verificación normativa RIC N°15 sin costo para flotas de la V Región.</p>
+                    <form id="diag-form">
+                        <div class="form-group">
+                            <label class="form-label" for="empresa">EMPRESA / OPERADOR DE FLOTA</label>
+                            <input type="text" id="empresa" class="form-input" placeholder="Ej. Viña Bus, Codelco Andina, Chilexpress" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="correo">CORREO CORPORATIVO</label>
+                            <input type="email" id="correo" class="form-input" placeholder="nombre@empresa.cl" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="cargadores">UBICACIÓN Y N° DE CARGADORES</label>
+                            <input type="text" id="cargadores" class="form-input" placeholder="Ej. Placilla, Valparaíso — 8 cargadores DC" required>
+                        </div>
+                        <button type="submit" class="btn-submit" data-magnetic>AGENDAR INSPECCIÓN TÉCNICA →</button>
+                        <p id="form-feedback" style="display:none; color: var(--accent-highlight); font-family: var(--font-mono); font-size: 0.75rem; margin-top: 0.85rem;">
+                            ✓ SOLICITUD RECIBIDA. NUESTRO SUPERVISOR DE TURNO (PEDRO SOTO) TE CONTACTARÁ EN &lt; 2 HORAS.
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 VOLTAPUERTO · EII 519 CORFO · REGIÓN DE VALPARAÍSO, CHILE</span>
+                <span>VENTAS: CAMILA ROJAS · RRHH Y COMPRAS: DIEGO MUÑOZ · TURNO: PEDRO SOTO</span>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
